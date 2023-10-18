@@ -1,0 +1,255 @@
+body {
+
+}
+#navbar {
+    background-image: url("../images/awning.png");
+    background-repeat: no-repeat;
+    display: grid;
+    width: 100%;
+    padding: 2%;
+    grid-template-columns: 30% 60% 10%;
+}
+p {
+    font-family: 'Josefin Sans';
+    color: #660018;
+}
+h2 {
+    font-family: 'Lobster Two';
+    color: #660018;  
+}
+h3 {
+    font-family: 'Lobster Two';
+    color: #660018;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+    font-family: 'Josefin Sans';
+    color: #660018;
+    padding-left: 8%;
+}
+#intro-grid {
+    margin-top: 3%;
+    display: grid;
+    min-height: 500px;
+    height: 95vh;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+    "painting intro-contact"
+    ;
+}
+#painting {
+    grid-area: painting;
+    background-image: url("../images/contact\ painting.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+#intro-contact {
+    margin: 3%;
+    text-align: center;
+}
+#contact-info {
+    padding: 3%;
+}
+#form {
+    background-color: #97C29A;
+    width: 80%;
+    height: 490px;
+    padding: 3%;
+    margin-left: 5%;
+    text-align: left;
+}
+.name-input, .email-input {
+    background-color: #fffde4;
+    width: 97%;
+    height: 40px;
+    border-radius: 5px;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-bottom: 1%;
+    margin-bottom: 5%;
+}
+.message {
+    background-color: #fffde4;
+    width: 97%;
+    height: 250px;
+    border-radius: 5px;
+    padding-top: 1%;
+    padding-left: 3%;
+    margin-bottom: 5%;
+}
+.box-1 {
+    color: #fffde4;
+}
+.send-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-right: 3%;
+    width: 100px;
+    background-color: #660018;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 25%;
+}
+#location {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+    "instagram-header location-and-hours";
+    text-align: center;
+}
+.location-address {
+    text-align: center;
+}
+.location-address li {
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+}
+.location-address ul {
+    display: inline-block;
+    width: 100px;
+}
+#instagram-header {
+    grid-area: instagram-header;
+    background-image: url("../images/instagram\ header.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+#fb-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+#footer {
+    background-image: url("../images/footer.png");
+    background-repeat: no-repeat;
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 25% 15% 30% 15% 10%;
+}
+
+@media only screen and (max-width: 900px) {
+    #navbar {
+        background-image: url("../images/awning.png");
+        background-repeat: no-repeat;
+        display: grid;
+        width: 100%;
+        padding: 2%;
+        grid-template-columns: 100%;
+    }
+    #navbar li {
+        display: none;
+    }
+    .nav-social {
+        display: none;
+    }
+    #intro-grid {
+        margin-top: 3%;
+        display: grid;
+        min-height: 500px;
+        height: 95vh;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "painting"
+        "intro-contact"
+        ;
+    }
+    #painting {
+        grid-area: painting;
+        background-image: url("../images/contact\ painting\ mobile.png");
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    #location {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "instagram-header"
+        "location-and-hours"
+        ;
+        text-align: center;
+    }
+    #instagram-header {
+        grid-area: instagram-header;
+        background-image: url("../images/ig\ header\ mobile.png");
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    #footer {
+        background-image: url("../images/footer\ mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar {
+        background-image: url("../images/awning.png");
+        background-repeat: no-repeat;
+        display: grid;
+        width: 100%;
+        padding: 2%;
+        grid-template-columns: 100%;
+    }
+    #navbar li {
+        display: none;
+    }
+    .nav-social {
+        display: none;
+    }
+    #intro-grid {
+        margin-top: 3%;
+        display: grid;
+        min-height: 500px;
+        height: 95vh;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "painting"
+        "intro-contact"
+        ;
+    }
+    #painting {
+        grid-area: painting;
+        background-image: url("../images/contact\ painting\ mobile.png");
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    #location {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "instagram-header"
+        "location-and-hours"
+        ;
+        text-align: center;
+    }
+    #instagram-header {
+        grid-area: instagram-header;
+        background-image: url("../images/ig\ header\ mobile.png");
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    #footer {
+        background-image: url("../images/footer\ mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
