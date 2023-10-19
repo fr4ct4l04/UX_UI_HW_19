@@ -78,9 +78,7 @@ li {
     padding-left: 3%;
     margin-bottom: 5%;
 }
-.box-1 {
-    color: #fffde4;
-}
+
 .send-button {
     display: flex;
     flex-direction: row;
@@ -94,6 +92,15 @@ li {
     text-align: center;
     margin-left: 35%;
     margin-right: 25%;
+}
+
+
+.send-button p {
+    color: #fffde4;
+}
+
+.hover-state {
+    background-color: #FBDAE0;
 }
 #location {
     margin-top: 3%;
